@@ -51,6 +51,7 @@ Solo seco + luminosidade alta
   
 Indicando que a planta está sob forte incidência de luz e necessita de irrigação urgente.
 
+
 Solo seco + luminosidade média ou baixa
 - O LCD exibe: Irrigando...
 
