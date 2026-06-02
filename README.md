@@ -46,13 +46,13 @@ Solo Seco ----} LED Vermelho 🔴 e LED Azul (Irrigação) 🔵
 
 O sistema também considera a luminosidade do ambiente para determinar a prioridade da irrigação.
 
-- Solo seco + luminosidade alta
-O LCD exibe: Irrig.Imediato
+Solo seco + luminosidade alta
+- O LCD exibe: Irrig.Imediato
   
 Indicando que a planta está sob forte incidência de luz e necessita de irrigação urgente.
 
-- Solo seco + luminosidade média ou baixa
-O LCD exibe: Irrigando...
+Solo seco + luminosidade média ou baixa
+- O LCD exibe: Irrigando...
 
 Indicando que a irrigação foi iniciada normalmente.
 
@@ -61,14 +61,14 @@ Indicando que a irrigação foi iniciada normalmente.
 
 Realizado através do sensor DHT22.
 
-- Temperatura Baixa = Menor que 20°C
-LCD: Temp: XXC - Baixa
+Temperatura Baixa = Menor que 20°C
+- LCD: Temp: XXC - Baixa
 
-- Temperatura ideal = Entre 20°C e 30°C
-LCD: Temp: XXC - Ideal
+Temperatura ideal = Entre 20°C e 30°C
+- LCD: Temp: XXC - Ideal
 
-- Temperatura Alta = Acima de 30°C
-LCD: Temp: XXC - Alta
+Temperatura Alta = Acima de 30°C
+- LCD: Temp: XXC - Alta
 
 ---
 # Monitoramento da Umidade do Ar
