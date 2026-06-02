@@ -14,10 +14,10 @@ Video apresentação:
 
 O sistema realiza a leitura contínua de:
 
-Umidade do Solo (Potenciômetro)
-Temperatura Ambiente (DHT22)
-Umidade do Ar (DHT22)
-Luminosidade (LDR)
+- Umidade do Solo (Potenciômetro)
+- Temperatura Ambiente (DHT22)
+- Umidade do Ar (DHT22)
+- Luminosidade (LDR)
 
 Com base nesses dados, o sistema classifica automaticamente as condições do cultivo e exibe informações no LCD
 
