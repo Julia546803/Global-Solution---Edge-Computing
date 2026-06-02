@@ -26,23 +26,20 @@ Com base nesses dados, o sistema classifica automaticamente as condições do cu
 
 O potenciômetro é utilizado para simular um sensor de umidade do solo.
 
-Solo Úmido 
-  LED Verde 🟢  
-    - Umidade do solo acima de 60%
-    - Irrigação desligada
-    - Ambiente considerado adequado
-    - Solo Moderado
+Solo Úmido ----} LED Verde 🟢  
+- Umidade do solo acima de 60%
+- Irrigação desligada
+- Ambiente considerado adequado
 
-  LED Amarelo 🟡
-    - Umidade do solo entre 30% e 60%
-    - Atenção preventiva
-    - Irrigação desligada
-    - Solo Seco
+Solo Moderado ----} LED Amarelo 🟡
+- Umidade do solo entre 30% e 60%
+- Atenção preventiva
+- Irrigação desligada
 
-  LED Vermelho 🔴 e LED Azul (Irrigação) 🔵
-    - Umidade solo abaixo de 30%
-    - Sistema entra em modo de irrigação
-    - LED azul representa a bomba de irrigação acionada
+Solo Seco ----} LED Vermelho 🔴 e LED Azul (Irrigação) 🔵
+- Umidade solo abaixo de 30%
+- Sistema entra em modo de irrigação
+- LED azul representa a bomba de irrigação acionada
 
 ---
 # Irrigação Inteligente
@@ -50,12 +47,12 @@ Solo Úmido
 O sistema também considera a luminosidade do ambiente para determinar a prioridade da irrigação.
 
 - Solo seco + luminosidade alta
-    O LCD exibe: Irrig.Imediato
+O LCD exibe: Irrig.Imediato
   
 Indicando que a planta está sob forte incidência de luz e necessita de irrigação urgente.
 
 - Solo seco + luminosidade média ou baixa
-    O LCD exibe: Irrigando...
+O LCD exibe: Irrigando...
 
 Indicando que a irrigação foi iniciada normalmente.
 
@@ -65,13 +62,13 @@ Indicando que a irrigação foi iniciada normalmente.
 Realizado através do sensor DHT22.
 
 - Temperatura Baixa = Menor que 20°C
-    LCD: Temp: XXC - Baixa
+LCD: Temp: XXC - Baixa
 
 - Temperatura ideal = Entre 20°C e 30°C
-    LCD: Temp: XXC - Ideal
+LCD: Temp: XXC - Ideal
 
 - Temperatura Alta = Acima de 30°C
-    LCD: Temp: XXC - Alta
+LCD: Temp: XXC - Alta
 
 ---
 # Monitoramento da Umidade do Ar
@@ -102,18 +99,18 @@ Essas informações são exibidas na segunda tela do LCD juntamente com os dados
 
 LED Verde
 Indica:
-  - Solo úmido
-  - Condição adequada
+- Solo úmido
+- Condição adequada
 
 LED Amarelo
 Indica:
-  - Solo moderadamente úmido
-  - Atenção preventiva
+- Solo moderadamente úmido
+- Atenção preventiva
 
 LED Vermelho
 Indica:
-  - Solo seco
-  - Necessidade de irrigação
+- Solo seco
+- Necessidade de irrigação
 
 LED Azul
 Indica:
@@ -121,8 +118,8 @@ Indica:
 
 Buzzer
 Ao detectar solo seco:
-  - 🔊 Emite um único aviso sonoro
-  - O buzzer não permanece ligado continuamente, evitando poluição sonora e consumo desnecessário de energia
+- 🔊 Emite um único aviso sonoro
+- O buzzer não permanece ligado continuamente, evitando poluição sonora e consumo desnecessário de energia
 
 ---
 # Display LCD
@@ -180,8 +177,8 @@ Conecte os componentes conforme o diagrama desenvolvido no Wokwi.
 2. Instalação das Bibliotecas:
 
 Instale na Arduino IDE:
-  - DHT Sensor Library
-  - LiquidCrystal
+- DHT Sensor Library
+- LiquidCrystal
 
 3. Upload:
 
@@ -190,16 +187,16 @@ Abra o arquivo .ino e envie o código para a placa Arduino.
 4. Testes:
 
 Para testar:
-  - Ajuste o potenciômetro para simular a umidade do solo.
-  - Modifique os valores do DHT22 para alterar temperatura e umidade do ar.
-  - Altere a luminosidade do LDR.
+- Ajuste o potenciômetro para simular a umidade do solo.
+- Modifique os valores do DHT22 para alterar temperatura e umidade do ar.
+- Altere a luminosidade do LDR.
 
 Observe:
-  - LEDs
-  - Buzzer
-  - LED Azul (irrigação)
-  - LCD
-  - Monitor Serial
+- LEDs
+- Buzzer
+- LED Azul (irrigação)
+- LCD
+- Monitor Serial
 
 ---
 # Equipe Desenvolvedora:
