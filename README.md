@@ -14,32 +14,44 @@ Video apresentação:
 
 O sistema realiza a leitura contínua de:
 
-- Umidade do Solo (Potenciômetro)
-- Temperatura Ambiente (DHT22)
-- Umidade do Ar (DHT22)
-- Luminosidade (LDR)
+- Umidade do Solo (Potenciômetro);
+- Temperatura Ambiente (DHT22);
+- Umidade do Ar (DHT22);
+- Luminosidade (LDR).
 
-Com base nesses dados, o sistema classifica automaticamente as condições do cultivo e exibe informações no LCD
+Com base nessas informações, o sistema:
+
+- Classifica o estado do solo;
+- Exibe informações no LCD;
+-Aciona LEDs indicadores;
+- Aciona um alerta sonoro;
+- Simula uma bomba de irrigação através de um LED azul.
 
 ---
 # Monitoramento da Umidade do Solo
 
 O potenciômetro é utilizado para simular um sensor de umidade do solo.
 
-Solo Úmido ----} LED Verde 🟢  
-- Umidade do solo acima de 60%
-- Irrigação desligada
-- Ambiente considerado adequado
+Solo Idela ----} LED Verde 🟢:
+- Umidade do solo entre 20% a 60%;
+- Irrigação desligada;
+- Ambiente considerada ideal para a maioria das culturas.
 
-Solo Moderado ----} LED Amarelo 🟡
-- Umidade do solo entre 30% e 60%
-- Atenção preventiva
-- Irrigação desligada
+Solo Úmido ----} LED Amarelo 🟡:
+- Umidade do solo entre 60% a 70%;
+- Atenção preventiva;
+- Irrigação desligada;
+- Solo ainda adequado, porém próximo ao excesso de água.
 
-Solo Seco ----} LED Vermelho 🔴 e LED Azul (Irrigação) 🔵
-- Umidade solo abaixo de 30%
-- Sistema entra em modo de irrigação
-- LED azul representa a bomba de irrigação acionada
+Solo Seco ----} LED Vermelho 🔴 e LED Azul (Irrigação) 🔵:
+- Umidade solo abaixo de 20%;
+- Sistema entra em modo de irrigação;
+- LED azul representa a bomba de irrigação acionada;
+
+Exesso de água ----} LED Vermelho 🔴:
+- Umidade do solo acima de 70%;
+- Irrigação desligada;
+- Indica risco de encharcamento e possíveis danos às raízes.
 
 ---
 # Irrigação Inteligente
@@ -52,7 +64,7 @@ Solo seco + luminosidade alta
 Indicando que a planta está sob forte incidência de luz e necessita de irrigação urgente.
 
 
-Solo seco + luminosidade média ou baixa
+Solo seco + luminosidade baixa ou ideal
 - O LCD exibe: Irrigando...
 
 Indicando que a irrigação foi iniciada normalmente.
@@ -89,9 +101,9 @@ O sensor LDR realiza a leitura da intensidade luminosa do ambiente.
 
 O sistema classifica a luminosidade em:
 
-- Baixa = Luz: Baixa
-- Ideal = Luz: Ideal
-- Alta = Luz: Alta
+- Baixa = Luz: Baixa;
+- Ideal = Luz: Ideal;
+- Alta = Luz: Alta.
 
 Essas informações são exibidas na segunda tela do LCD juntamente com os dados de temperatura e umidade do ar.
 
@@ -100,27 +112,27 @@ Essas informações são exibidas na segunda tela do LCD juntamente com os dados
 
 LED Verde
 Indica:
-- Solo úmido
-- Condição adequada
+- Solo ideal;
+- Condição adequada.
 
 LED Amarelo
 Indica:
-- Solo moderadamente úmido
-- Atenção preventiva
+- Solo moderadamente úmido;
+- Atenção preventiva.
 
 LED Vermelho
 Indica:
-- Solo seco
-- Necessidade de irrigação
+- Solo seco (abaixo de 20%) indicando nessecidade de irrigação;
+- Ou excesso de água (acima de 70%).
 
 LED Azul
 Indica:
-- Sistema de irrigação acionado
+- Sistema de irrigação acionado.
 
 Buzzer
 Ao detectar solo seco:
-- 🔊 Emite um único aviso sonoro
-- O buzzer não permanece ligado continuamente, evitando poluição sonora e consumo desnecessário de energia
+- 🔊 Emite um único aviso sonoro;
+- O buzzer não permanece ligado continuamente, evitando poluição sonora e consumo desnecessário de energia.
 
 ---
 # Display LCD
@@ -129,18 +141,18 @@ O sistema utiliza um display LCD 16x2 para exibição das informações em duas 
 
 Tela A – Status do Solo
 Exemplo:
-- Solo:25%
-- Irrig.Imediato
+- Solo:25%;
+- Irrig.Imediato.
   
 ou
 
-- Solo:45%
-- Solo Moderado
+- Solo:45%;
+- Solo Moderado.
 
 ou
 
-- Solo:80%
-- Solo Umido
+- Solo:80%;
+- Solo Umido.
   
 Tela B – Ambiente
 Exemplo:
@@ -148,25 +160,25 @@ Exemplo:
 - Ar:65% Luz:Ideal
 
 Nesta tela são exibidas:
-  - Temperatura
-  - Umidade do ar
-  - Luminosidade
+  - Temperatura;
+  - Umidade do ar;
+  - Luminosidade.
 
 ---
 # Hardware Utilizado
 
-- 1x Arduino Uno
-- 1x Sensor DHT22
-- 1x Sensor LDR
-- 1x Potenciômetro (simulando sensor de umidade do solo)
-- 1x Display LCD 16x2
-- 1x LED Verde
-- 1x LED Amarelo
-- 1x LED Vermelho
-- 1x LED Azul
-- 1x Buzzer
-- 1x Protoboard
-- Cabos Jumper
+- 1x Arduino Uno;
+- 1x Sensor DHT22;
+- 1x Sensor LDR;
+- 1x Potenciômetro (simulando sensor de umidade do solo);
+- 1x Display LCD 16x2;
+- 1x LED Verde;
+- 1x LED Amarelo;
+- 1x LED Vermelho;
+- 1x LED Azul;
+- 1x Buzzer;
+- 1x Protoboard;
+- Cabos Jumper.
 
 ---
 # Como Executar
@@ -188,16 +200,16 @@ Abra o arquivo .ino e envie o código para a placa Arduino.
 4. Testes:
 
 Para testar:
-- Ajuste o potenciômetro para simular a umidade do solo.
-- Modifique os valores do DHT22 para alterar temperatura e umidade do ar.
+- Ajuste o potenciômetro para simular a umidade do solo;
+- Modifique os valores do DHT22 para alterar temperatura e umidade do ar;
 - Altere a luminosidade do LDR.
 
 Observe:
-- LEDs
-- Buzzer
-- LED Azul (irrigação)
-- LCD
-- Monitor Serial
+- LEDs;
+- Buzzer;
+- LED Azul (irrigação);
+- LCD;
+- Monitor Serial.
 
 ---
 # Equipe Desenvolvedora:
