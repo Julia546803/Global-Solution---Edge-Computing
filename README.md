@@ -32,7 +32,7 @@ Com base nessas informações, o sistema:
 
 O potenciômetro é utilizado para simular um sensor de umidade do solo.
 
-Solo Idela ----} LED Verde 🟢:
+Solo Ideal ----} LED Verde 🟢:
 - Umidade do solo entre 20% a 60%;
 - Irrigação desligada;
 - Ambiente considerada ideal para a maioria das culturas.
